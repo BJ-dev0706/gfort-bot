@@ -45,8 +45,17 @@ jobs:
           cd /var/www/gfort-bot
           git pull
           npm install
+          # Ensure all required directories exist
+          mkdir -p src/commands
+          mkdir -p src/events
+          mkdir -p src/utils
+          mkdir -p src/handlers
+          mkdir -p src/config
+          # Ensure proper permissions
+          chmod -R 755 .
+          # Start or restart the bot
           if pm2 list | grep -q "bot"; then
             pm2 restart bot --update-env
           else
-            pm2 start index.js --name bot
+            pm2 start src/index.js --name bot
           fi 
