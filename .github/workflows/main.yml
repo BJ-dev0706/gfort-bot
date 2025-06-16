@@ -45,4 +45,8 @@ jobs:
           cd /var/www/gfort-bot
           git pull
           npm install
-          pm2 restart bot 
+          if pm2 list | grep -q "bot"; then
+            pm2 restart bot --update-env
+          else
+            pm2 start index.js --name bot
+          fi 

@@ -38,7 +38,7 @@ A powerful Discord bot designed specifically for tech agency servers, providing 
 
 1. **Clone the repository**
    ```bash
-   https://github.com/BJ-dev0706/gfort-bot.git
+   git clone https://github.com/BJ-dev0706/gfort-bot.git
    cd gfort-bot
    ```
 
