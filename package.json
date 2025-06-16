@@ -1,0 +1,21 @@
+{
+  "name": "discord-welcome-bot",
+  "version": "1.0.0",
+  "description": "A feature-rich Discord welcome bot",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "jimp": "^0.22.10",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=16.11.0 <19.0.0"
+  }
+} 
